@@ -1,0 +1,12 @@
+.gradle/
+.kotlin/
+build/
+local.properties
+*.apk
+*.apk.sha256
+*.jks
+*.keystore
+keystore.properties
+release/
+.clave-respaldada
+.estado/

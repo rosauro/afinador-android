@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_section_language">IDIOMA</string>
+    <string name="settings_section_reliability">FIABILIDAD</string>
+    <string name="settings_battery_title">Batería sin restricciones</string>
+    <string name="settings_battery_ok">Correcto: la app funciona con la pantalla apagada.</string>
+    <string name="settings_battery_missing">Android puede frenar la app en segundo plano.</string>
+    <string name="settings_notif_title">Notificaciones</string>
+    <string name="settings_notif_ok">Correcto: las notificaciones están activadas.</string>
+    <string name="settings_notif_missing">Desactivadas: no verás avisos de la app.</string>
+    <string name="settings_oem_note">En Xiaomi, Oppo, Samsung u otras marcas, activa también «Inicio automático» y «Sin restricciones» en los ajustes de batería de esta app.</string>
+    <string name="settings_btn_allow">Permitir</string>
+    <string name="settings_section_about">ACERCA DE</string>
+    <string name="settings_version">Versión %1$s</string>
+    <string name="settings_about_text">Afinador cromático sencillo: nota, desviación en cents, trompeta en Si♭ y violín. Sin anuncios. Todo se queda en tu móvil; solo se conecta a GitHub para buscar actualizaciones (se puede desactivar).</string>
+    <string name="settings_section_updates">ACTUALIZACIONES</string>
+    <string name="settings_auto_update">Buscar actualizaciones automáticamente</string>
+    <string name="settings_auto_update_hint">Solo se conecta a GitHub (rosauro/afinador-android). Desactívalo si prefieres actualizar a mano.</string>
+    <string name="settings_installed_version">Versión instalada: %1$s</string>
+    <string name="settings_update_latest">Tienes la última versión</string>
+    <string name="settings_update_available">Nueva versión %1$s disponible</string>
+    <string name="settings_update_checking">Buscando…</string>
+    <string name="settings_update_downloading">Descargando…</string>
+    <string name="settings_update_installing">Instalando…</string>
+    <string name="settings_update_error">No se pudo comprobar: %1$s</string>
+    <string name="settings_btn_check">Buscar ahora</string>
+    <string name="settings_btn_update">Actualizar a %1$s</string>
+    <string name="settings_toast_allow_unknown">Permite «Instalar apps desconocidas» a Afinador y vuelve a pulsar</string>
+    <string name="settings_toast_busy">No se puede actualizar ahora mismo</string>
+    <string name="settings_unknown_title">Instalar apps desconocidas</string>
+    <string name="settings_unknown_ok">Correcto: puedes instalar las actualizaciones descargadas.</string>
+    <string name="settings_unknown_missing">Sin este permiso, Android no instala la actualización.</string>
+</resources>

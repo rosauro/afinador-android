@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_language">LANGUAGE</string>
+    <string name="settings_section_reliability">RELIABILITY</string>
+    <string name="settings_battery_title">Unrestricted battery</string>
+    <string name="settings_battery_ok">OK: the app works with the screen off.</string>
+    <string name="settings_battery_missing">Android may throttle the app in the background.</string>
+    <string name="settings_notif_title">Notifications</string>
+    <string name="settings_notif_ok">OK: notifications are enabled.</string>
+    <string name="settings_notif_missing">Disabled: you will not see app alerts.</string>
+    <string name="settings_oem_note">On Xiaomi, Oppo, Samsung or other brands, also enable “Autostart” and “No restrictions” in this app’s battery settings.</string>
+    <string name="settings_btn_allow">Allow</string>
+    <string name="settings_section_about">ABOUT</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_about_text">Simple chromatic tuner: note, cents deviation, B♭ trumpet and violin. No ads. Everything stays on your phone; it only connects to GitHub to look for updates (can be turned off).</string>
+    <string name="settings_section_updates">UPDATES</string>
+    <string name="settings_auto_update">Check for updates automatically</string>
+    <string name="settings_auto_update_hint">Only connects to GitHub (rosauro/afinador-android). Turn off to update manually.</string>
+    <string name="settings_installed_version">Installed version: %1$s</string>
+    <string name="settings_update_latest">You have the latest version</string>
+    <string name="settings_update_available">New version %1$s available</string>
+    <string name="settings_update_checking">Checking…</string>
+    <string name="settings_update_downloading">Downloading…</string>
+    <string name="settings_update_installing">Installing…</string>
+    <string name="settings_update_error">Could not check: %1$s</string>
+    <string name="settings_btn_check">Check now</string>
+    <string name="settings_btn_update">Update to %1$s</string>
+    <string name="settings_toast_allow_unknown">Allow “Install unknown apps” for Afinador and tap again</string>
+    <string name="settings_toast_busy">Cannot update right now</string>
+    <string name="settings_unknown_title">Install unknown apps</string>
+    <string name="settings_unknown_ok">OK: you can install downloaded updates.</string>
+    <string name="settings_unknown_missing">Without this permission Android will not install the update.</string>
+</resources>
