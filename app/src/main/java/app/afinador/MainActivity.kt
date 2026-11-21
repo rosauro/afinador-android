@@ -149,7 +149,7 @@ class MainActivity : Activity() {
             chipsRow.addView(Ui.chip(c, getString(inst.labelRes), settings.instrument == inst) {
                 settings.instrument = inst
                 renderChips(); showReading(lastFreq)
-            }.apply { maxLines = 1; minimumHeight = Ui.dp(c, 40); gravity = Gravity.CENTER },
+            }.apply { setSingleLine(true); textSize = 13f; setPadding(Ui.dp(c, 6), 0, Ui.dp(c, 6), 0); minHeight = Ui.dp(c, 44); gravity = Gravity.CENTER },
                 LinearLayout.LayoutParams(0, Ui.WRAP, 1f).apply { setMargins(Ui.dp(c, 3), 0, Ui.dp(c, 3), 0) })
         }
     }
