@@ -2,14 +2,6 @@
 <resources>
     <string name="settings_title">Ajustes</string>
     <string name="settings_section_language">IDIOMA</string>
-    <string name="settings_section_reliability">FIABILIDAD</string>
-    <string name="settings_battery_title">Batería sin restricciones</string>
-    <string name="settings_battery_ok">Correcto: la app funciona con la pantalla apagada.</string>
-    <string name="settings_battery_missing">Android puede frenar la app en segundo plano.</string>
-    <string name="settings_notif_title">Notificaciones</string>
-    <string name="settings_notif_ok">Correcto: las notificaciones están activadas.</string>
-    <string name="settings_notif_missing">Desactivadas: no verás avisos de la app.</string>
-    <string name="settings_oem_note">En Xiaomi, Oppo, Samsung u otras marcas, activa también «Inicio automático» y «Sin restricciones» en los ajustes de batería de esta app.</string>
     <string name="settings_btn_allow">Permitir</string>
     <string name="settings_section_about">ACERCA DE</string>
     <string name="settings_version">Versión %1$s</string>

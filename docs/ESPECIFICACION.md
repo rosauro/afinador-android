@@ -12,7 +12,7 @@ Versión móvil del afinador de escritorio (`../afinador`, Rust). Afinador crom�
 ## Cuestionario de fiabilidad (L-SPEC-1)
 | Pregunta | Respuesta |
 |---|---|
-| Trabajo en segundo plano | NO (la tarjeta Fiabilidad de la plantilla solo afecta al actualizador) |
+| Trabajo en segundo plano | NO (la tarjeta Fiabilidad de la plantilla se quitó: no aplica) |
 | Avisos a hora exacta | NO |
 | Audio | Entrada: `AudioRecord` MIC, 44,1 kHz mono, hilo propio `URGENT_AUDIO` |
 | Temporización crítica | NO (el análisis tolera retrasos de decenas de ms) |

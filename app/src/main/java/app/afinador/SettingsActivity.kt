@@ -1,13 +1,11 @@
 package app.afinador
 
 import android.app.Activity
-import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.net.Uri
 import android.os.Bundle
-import android.os.PowerManager
 import android.view.Gravity
 import android.view.View
 import android.widget.LinearLayout
@@ -19,7 +17,6 @@ import android.widget.Toast
 class SettingsActivity : Activity() {
     private lateinit var settings: Settings
     private lateinit var langCard: LinearLayout
-    private lateinit var reliabilityCard: LinearLayout
     private lateinit var updatesCard: LinearLayout
     private var updateStatus: String? = null
 
@@ -37,7 +34,6 @@ class SettingsActivity : Activity() {
             root.addView(card, Ui.lp(c))
         }
         langCard = Ui.card(c); section(R.string.settings_section_language, langCard); renderLanguage()
-        reliabilityCard = Ui.card(c); section(R.string.settings_section_reliability, reliabilityCard)
         updatesCard = Ui.card(c); section(R.string.settings_section_updates, updatesCard)
 
         val version = runCatching { packageManager.getPackageInfo(packageName, 0).versionName }.getOrNull() ?: "?"
@@ -57,7 +53,6 @@ class SettingsActivity : Activity() {
     override fun onResume() {
         super.onResume()
         Updater.userInitiated = true
-        renderReliability()
         renderUpdates()
     }
 
@@ -77,26 +72,6 @@ class SettingsActivity : Activity() {
         langCard.addView(row, Ui.lp(c))
     }
 
-    private fun renderReliability() {
-        val c = this
-        reliabilityCard.removeAllViews()
-        val batteryOk = getSystemService(PowerManager::class.java).isIgnoringBatteryOptimizations(packageName)
-        reliabilityCard.addView(row(batteryOk, getString(R.string.settings_battery_title),
-            getString(if (batteryOk) R.string.settings_battery_ok else R.string.settings_battery_missing),
-            getString(R.string.settings_btn_allow)) {
-            launch(Intent(android.provider.Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS, Uri.parse("package:$packageName")),
-                Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:$packageName")))
-        }, Ui.lp(c))
-        val notifOk = getSystemService(NotificationManager::class.java).areNotificationsEnabled()
-        reliabilityCard.addView(row(notifOk, getString(R.string.settings_notif_title),
-            getString(if (notifOk) R.string.settings_notif_ok else R.string.settings_notif_missing),
-            getString(R.string.settings_btn_allow)) {
-            startActivity(Intent(android.provider.Settings.ACTION_APP_NOTIFICATION_SETTINGS)
-                .putExtra(android.provider.Settings.EXTRA_APP_PACKAGE, packageName))
-        }, Ui.lp(c, t = 20))
-        reliabilityCard.addView(Ui.text(c, getString(R.string.settings_oem_note), 13f, Ui.MUTED)
-            .apply { setLineSpacing(0f, 1.3f) }, Ui.lp(c, t = 20))
-    }
 
     private fun renderUpdates() {
         val c = this
@@ -186,5 +161,4 @@ class SettingsActivity : Activity() {
         }
     }
 
-    private fun launch(primary: Intent, fallback: Intent) { try { startActivity(primary) } catch (e: Exception) { startActivity(fallback) } }
 }
