@@ -1,8 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Afinador</string>
+    <string name="app_name">Tuner</string>
     <string name="ui_tab_inicio">Home</string>
     <string name="ui_tab_ajustes">Settings</string>
-    <string name="main_title">Afinador</string>
-    <string name="main_hello">New app: replace this screen.</string>
+    <string name="main_title">Tuner</string>
+    <string name="main_instrument_trumpet">B♭ trumpet</string>
+    <string name="main_instrument_violin">Violin</string>
+    <string name="main_instrument_chromatic">Chromatic</string>
+    <string name="main_no_note">–</string>
+    <string name="main_cents">%1$+d cents</string>
+    <string name="main_hz_measured">%1$s Hz</string>
+    <string name="main_hz_value">%1$d Hz</string>
+    <string name="main_reference">Reference %1$s</string>
+    <string name="main_minus">−</string>
+    <string name="main_plus">+</string>
+    <string name="main_minus_desc">Lower the reference by 1 Hz</string>
+    <string name="main_plus_desc">Raise the reference by 1 Hz</string>
+    <string name="main_meter_desc">Tuning meter, from −50 to +50 cents</string>
+    <string name="main_level_desc">Microphone signal level</string>
+    <string name="main_mic_title">Use the microphone</string>
+    <string name="main_mic_message">The tuner needs the microphone to hear your instrument. Sound is analysed on the spot and is never recorded or sent anywhere.</string>
+    <string name="main_mic_continue">Continue</string>
+    <string name="main_mic_cancel">Not now</string>
+    <string name="main_mic_denied">Without microphone permission the tuner cannot hear your instrument.</string>
+    <string name="main_mic_allow">Allow the microphone</string>
+    <string name="main_audio_error">Could not open the microphone (is another app using it?)</string>
+    <string name="main_retry">Retry</string>
+    <string name="note_0">C</string>
+    <string name="note_1">C♯</string>
+    <string name="note_2">D</string>
+    <string name="note_3">D♯</string>
+    <string name="note_4">E</string>
+    <string name="note_5">F</string>
+    <string name="note_6">F♯</string>
+    <string name="note_7">G</string>
+    <string name="note_8">G♯</string>
+    <string name="note_9">A</string>
+    <string name="note_10">A♯</string>
+    <string name="note_11">B</string>
 </resources>
